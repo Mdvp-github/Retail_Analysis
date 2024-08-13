@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession 
-from ConfigReader import get_pyspark_config
+from lib.ConfigReader import get_pyspark_config
 def get_spark_session(env):
     if env == "LOCAL":
         return SparkSession.builder \
